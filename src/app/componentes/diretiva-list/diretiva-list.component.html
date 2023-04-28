@@ -1,0 +1,10 @@
+   
+    <h1>Lista de Items Escolar</h1>
+    <li *ngFor="let item of listar">
+        {{ item }}
+    </li>
+    <hr>
+    <!-- sem ngModel -->
+    <input #inputValue>
+    <button (click)="listAddItem(inputValue.value)" >Add item</button>
+
